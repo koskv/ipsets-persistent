@@ -1,3 +1,5 @@
-ipsets-persistent (1.0.0) UNRELEASED; urgency=medium
+ipsets-persistent (1.0) UNRELEASED; urgency=medium
 
-  * Init
+  * Initial release. (Closes: #XXXXXX)
+
+ --  <kv@localhost>  Mon, 05 Dec 2016 14:29:11 +0300
