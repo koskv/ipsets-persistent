@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Jonathan Wiltshire <jmw@debian.org>
 Uploaders: Andreas Rütten <AndreasRuetten@gmx.de>
 Build-Depends: debhelper (>= 7.0.50~), dh-systemd, po-debconf
-Standards-Version: 1.0
+Standards-Version: 1.0.0
 
 Package: ipsets-persistent
 Architecture: all
