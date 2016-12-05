@@ -1,0 +1,29 @@
+Source: iptables-persistent
+Section: admin
+Priority: optional
+Maintainer: Jonathan Wiltshire <jmw@debian.org>
+Uploaders: Andreas Rütten <AndreasRuetten@gmx.de>
+Build-Depends: debhelper (>= 7.0.50~), dh-systemd, po-debconf
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/cgit/collab-maint/iptables-persistent.git/
+Vcs-Git: git://anonscm.debian.org/collab-maint/iptables-persistent.git
+
+Package: netfilter-persistent
+Architecture: all
+Depends: lsb-base, ${misc:Depends}
+Breaks: iptables-persistent (<< 1~)
+Replaces: iptables-persistent (<< 1~)
+Description: boot-time loader for netfilter configuration
+ This package provides a loader for netfilter configuration using a
+ plugin-based architecture. It can load, flush and save a running
+ configuration. Extending netfilter-persistent with plugins is trvial and can
+ be done in any language.
+
+Package: iptables-persistent
+Architecture: all
+Depends: netfilter-persistent (= ${source:Version}), iptables, ${misc:Depends}
+Description: boot-time loader for netfilter rules, iptables plugin
+ netfilter-persistent is a loader for netfilter configuration using a
+ plugin-based architecture.
+ .
+ This package contains the iptables and ip6tables plugins.
